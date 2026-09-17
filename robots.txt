@@ -38,4 +38,16 @@ Allow: /
 User-agent: YisouSpider
 Allow: /
 
+User-agent: GrokBot
+Allow: /
+
+User-agent: xAI-Bot
+Allow: /
+
+User-agent: MistralAI-User
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
 Sitemap: https://www.zhiji520.cn/sitemap.xml
