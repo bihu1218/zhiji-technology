@@ -51,3 +51,11 @@
 
 - [网站地图](https://www.zhiji520.cn/sitemap.xml)：全站页面列表
 - [完整版 llms-full.txt](https://www.zhiji520.cn/llms-full.txt)：全站内容汇总，含三类业务细节、事实边界、隐私与服务条款
+
+## 结构化端点
+
+- [站点摘要 JSON](https://www.zhiji520.cn/ai/summary.json)：公司实体、三类业务、事实边界、机器可读入口的完整结构化描述
+- [常见问题 JSON](https://www.zhiji520.cn/ai/faq.json)：14 个客户常见问题的结构化问答
+- [AI 使用说明](https://www.zhiji520.cn/.well-known/ai.txt)：抓取与引用规范
+
+每页的 Markdown 干净版本可通过页面 `<head>` 中的 `rel="alternate" type="text/markdown"` 声明发现。

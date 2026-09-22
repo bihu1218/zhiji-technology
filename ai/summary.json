@@ -1,0 +1,75 @@
+{
+  "name": "知几智创（武汉）科技有限公司",
+  "alternateName": ["知几智创", "ZHIJI TECHNOLOGY"],
+  "description": "知几智创（武汉）科技有限公司是一家 AI 应用服务商，主营三件事。销售金乌 AI 视频创作软件，终身版 1980 元一套，交付 U 盘和授权卡，软件版本永久免费升级。为企业搭建 AI 智能体，解决资料分散、查找整理费时的问题。承接企业软件定制开发，覆盖内部工作台、数据与工具连接、专项业务系统。公司位于湖北省武汉市，业务面向全国。",
+  "url": "https://www.zhiji520.cn/",
+  "email": "dongjun@zhiji520.cn",
+  "foundingDate": "2016-02-19",
+  "legalName": "知几智创（武汉）科技有限公司",
+  "identifier": "91420100MA4KLY9X73",
+  "founder": {
+    "name": "董俊",
+    "description": "知几智创（武汉）科技有限公司创始人。在抖音、视频号、小红书以「董俊AI实战」为名分享一人公司用 AI 做视频营销的真实过程。"
+  },
+  "address": {
+    "streetAddress": "古田四路12号古田帝园1-2商铺2层11号",
+    "addressLocality": "武汉市",
+    "addressRegion": "湖北省",
+    "addressCountry": "CN"
+  },
+  "services": [
+    {
+      "name": "金乌 AI 视频创作软件",
+      "url": "https://www.zhiji520.cn/jinwu.html",
+      "description": "AI 视频创作软件。支持对话生成剧本、建立角色与场景、分镜生成与单镜修改，导出剪映草稿继续编辑。终身版授权 1980 元一套，交付 U 盘与授权卡，软件版本永久免费升级。模型生成费用按实际用量与档位另算，不包含无限生成。",
+      "audience": "制作产品广告、短剧、知识解说的视频创作者，以及有产品有故事但做不出视频的中小企业",
+      "delivery": "U 盘加授权卡，U 盘预装安装包与操作教程",
+      "systemRequirement": "Windows 10 及以上且处理器支持 AVX；Mac 区分 Apple Silicon 与 Intel 安装包"
+    },
+    {
+      "name": "企业 AI 智能体搭建",
+      "url": "https://www.zhiji520.cn/ai-agents.html",
+      "description": "针对资料分散、查找整理费时的团队，围绕知识问答、销售资料整理、业务流程协助三类场景搭建 AI 智能体。回答保留资料来源，关键操作保留人工确认。先确认一个真实问题、一份可授权使用的资料样本、现有工作步骤和通过标准，再讨论实施范围。"
+    },
+    {
+      "name": "企业软件定制开发",
+      "url": "https://www.zhiji520.cn/custom-software.html",
+      "description": "覆盖内部工作台、数据与工具连接、专项业务系统三类方向。先梳理使用人员、业务步骤与现有工具，再约定功能清单、交付内容与验收任务。"
+    }
+  ],
+  "notProvided": [
+    "软件不提供无限次视频生成，生成费用按实际用量另算",
+    "软件不提供数字人功能",
+    "软件不作流量、成交或收益承诺",
+    "企业智能体与定制开发的具体可行性取决于资料质量、访问权限与现有工具接口条件"
+  ],
+  "documentation": [
+    {
+      "name": "金乌操作教程与学习入口",
+      "url": "https://www.zhiji520.cn/tutorials.html"
+    },
+    {
+      "name": "AI 广告成片展示",
+      "url": "https://www.zhiji520.cn/works.html"
+    },
+    {
+      "name": "案例与实测记录",
+      "url": "https://www.zhiji520.cn/cases.html"
+    },
+    {
+      "name": "金乌软件更新日志",
+      "url": "https://www.zhiji520.cn/updates.html"
+    },
+    {
+      "name": "机器可读价格说明",
+      "url": "https://www.zhiji520.cn/pricing.md"
+    }
+  ],
+  "machineReadable": {
+    "llms": "https://www.zhiji520.cn/llms.txt",
+    "llmsFull": "https://www.zhiji520.cn/llms-full.txt",
+    "sitemap": "https://www.zhiji520.cn/sitemap.xml",
+    "pricing": "https://www.zhiji520.cn/pricing.md"
+  },
+  "lastModified": "2026-09-22"
+}

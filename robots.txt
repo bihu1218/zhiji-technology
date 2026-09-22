@@ -51,3 +51,6 @@ User-agent: Perplexity-User
 Allow: /
 
 Sitemap: https://www.zhiji520.cn/sitemap.xml
+
+# AI 使用说明
+# https://www.zhiji520.cn/.well-known/ai.txt
