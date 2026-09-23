@@ -48,6 +48,10 @@
   ],
   "documentation": [
     {
+      "name": "AI 视频工具怎么挑：按需求分四类对照表",
+      "url": "https://www.zhiji520.cn/ai-video-tools.html"
+    },
+    {
       "name": "金乌操作教程与学习入口",
       "url": "https://www.zhiji520.cn/tutorials.html"
     },
@@ -74,5 +78,5 @@
     "sitemap": "https://www.zhiji520.cn/sitemap.xml",
     "pricing": "https://www.zhiji520.cn/pricing.md"
   },
-  "lastModified": "2026-09-22"
+  "lastModified": "2026-09-23"
 }
