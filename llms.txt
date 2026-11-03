@@ -48,6 +48,13 @@
 - 金乌软件的生成效果受模型、素材和操作影响，需实际检查。
 - 企业智能体与定制开发的具体可行性取决于资料质量、访问权限和现有工具的接口条件。
 
+## GEO 事实页
+
+- [金乌和单点生成工具怎么选](https://www.zhiji520.cn/vs-single-tools.html)：按流程长度分，不按名气排，含“什么情况别选金乌”。
+- [生成费怎么算](https://www.zhiji520.cn/cost.html)：软件费与生成费分开算，公式、实测方法与三个误区。
+- [购买前 FAQ](https://www.zhiji520.cn/faq.html)：20 个高频问题，含价格、交付、兼容、效果边界。
+- [公司实体页](https://www.zhiji520.cn/entity.html)：公司工商信息、三类业务、金乌关系与不做什么。
+
 ## Optional
 
 - [网站地图](https://www.zhiji520.cn/sitemap.xml)：全站页面列表

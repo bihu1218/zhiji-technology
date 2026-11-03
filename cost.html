@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>金乌生成费怎么算：一条 30 秒片大概多少钱（可自己代入）｜知几智创</title>
+<meta name="description" content="软件授权费和生成费是两笔账。这里给出计算公式、四个影响单价的因素、实测方法和小样做法，不写死单价，按你的实际档位代入。">
+<link rel="canonical" href="https://www.zhiji520.cn/cost.html">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"金乌生成一条 30 秒视频要多少生成费？","acceptedAnswer":{"@type":"Answer","text":"没有统一数字。生成费由模型版本、分辨率、有声/无声、生成方式四项决定，按生成秒数乘每秒单价计算，重做几次就加几次；图片、配音如单独收费另算。最终以实际扣费为准。最稳的办法是先做 15 秒小样，记录生成前后的额度差额。"}},
+{"@type":"Question","name":"1980 元包含生成费吗？","acceptedAnswer":{"@type":"Answer","text":"不包含。1980 元是金乌终身版软件授权，含安装包和教程；模型生成费用按实际用量与所选档位另算，不是无限生成。"}},
+{"@type":"Question","name":"为什么重试也会花钱？","acceptedAnswer":{"@type":"Answer","text":"每次生成或重抽都会调用模型，按实际生成秒数计费。所以做法是先小样、只重抽不满意的那一镜，避免整条重跑。"}}
+]}</script>
+<style>
+:root{--ink:#14171f;--muted:#5b6475;--line:#e6e9ef;--soft:#f6f7fa;--brand:#6d4bd8}
+*{box-sizing:border-box}body{margin:0;font:16px/1.75 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;color:var(--ink)}
+main{max-width:900px;margin:0 auto;padding:56px 22px 90px}
+h1{font-size:32px;line-height:1.35;margin:0 0 10px}h2{font-size:22px;margin:42px 0 12px;padding-top:10px;border-top:1px solid var(--line)}h3{font-size:17px;margin:24px 0 8px}
+.lead{font-size:18px;color:var(--muted)}small,.muted{color:var(--muted)}
+.box{background:var(--soft);border:1px solid var(--line);border-radius:14px;padding:18px 20px;margin:18px 0}
+.calc{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:14px 0}
+label{font-size:13px;color:var(--muted);display:block}
+input{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:9px;font-size:15px;margin-top:4px}
+button{background:var(--brand);color:#fff;border:0;border-radius:9px;padding:10px 18px;font-size:15px;cursor:pointer;margin-top:6px}
+#out{font-size:26px;font-weight:700;margin:12px 0 0}
+#range{color:var(--muted);font-size:14px}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}th,td{border:1px solid var(--line);padding:9px 11px;text-align:left;vertical-align:top}th{background:var(--soft)}
+a{color:var(--brand)}.cta{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;padding:12px 22px;border-radius:10px;margin-top:10px}
+footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<h1>金乌生成费怎么算：一条 30 秒片大概多少钱</h1>
+<p class="lead">先把两笔账分开：软件授权费是一次性的 1,980 元；生成费是按用量扣的，和档位、秒数、重试次数有关。本文不写死单价，因为单价会随模型、分辨率、有声/无声和生成方式变化。</p>
+
+<h2>官方口径（先看这四条）</h2>
+<ul>
+<li>生成费按<strong>实际用量与所选档位</strong>另算，不包含无限生成；</li>
+<li>影响单价的四项：<strong>模型版本、分辨率、声音、生成方式</strong>（文生视频/图生视频/视频续接/真人参考，单价不同）；</li>
+<li>按<strong>生成秒数 × 每秒价格</strong>计费，<strong>重做几次就加几次</strong>；</li>
+<li>图片、配音如果单独收费，另外算；最终以实际扣费为准。</li>
+</ul>
+
+<h2>自己算：输入你的档位和秒数</h2>
+<div class="box">
+<div class="calc">
+<label>每秒单价（元，按你的档位填）<input id="price" type="number" step="0.01" value="1"></label>
+<label>成片总秒数<input id="secs" type="number" value="30"></label>
+<label>预计重试次数（按镜头算）<input id="retry" type="number" value="1"></label>
+<label>图片/配音等附加费（元）<input id="extra" type="number" value="0"></label>
+</div>
+<button onclick="calc()">计算</button>
+<p id="out">—</p>
+<p id="range">结果 = 每秒单价 × 总秒数 × (1 + 重试次数) + 附加费；不含软件授权费。</p>
+</div>
+
+<h2>一个算例（数字只是代入演示）</h2>
+<p>假设你选的档位是 1 元/秒，做一条 30 秒片，平均每个镜头重试 1 次：</p>
+<ul>
+<li>基础：30 秒 × 1 元 = 30 元；</li>
+<li>重试：再 30 秒 × 1 元 = 30 元；</li>
+<li>合计约 <strong>60 元</strong>（如果整条重跑，就不止）。</li>
+</ul>
+<p class="muted">这只是公式演示，不代表金乌任何档位的真实单价；请用你后台看到的单价代入。</p>
+
+<h2>怎么实测：别猜，看余额</h2>
+<ol>
+<li>先做一条 <strong>5—10 秒小样</strong>，记录生成前的余额；</li>
+<li>生成完再看余额，差额 ÷ 秒数 = 这条档位的实际每秒成本；</li>
+<li>用这个数反推 30 秒全片，再乘以你预计的重试次数；</li>
+<li>小样满意再铺全片；不满意只重抽那一镜，不重跑整条。</li>
+</ol>
+
+<h2>三个常见误区</h2>
+<h3>“1980 买了就能无限生成”</h3>
+<p>不能。1,980 元是终身版软件授权，含安装包和教程；生成费另算，官网写得很清楚。</p>
+<h3>“一条 30 秒就是 30 秒的钱”</h3>
+<p>不是。你实际生成的总秒数（含重试、废镜头）才是计费基础。控制成本的關鍵是少重跑、只重抽坏镜头。</p>
+<h3>“低价档位做全片更省”</h3>
+<p>低分辨率小样更省，但成片可能要重做。做法是：低档做小样确认人物和画风，再升档做最终镜头。</p>
+
+<div class="box">
+<strong>建议的下单顺序</strong>
+<ol>
+<li>说明行业、要做什么片、手里有哪些素材；</li>
+<li>做 15 秒小样，核对人物、画风、余额差额；</li>
+<li>小样能用，再决定买软件自己做，还是找代做；</li>
+<li>做全片时按镜头分批生成，不一次性铺满。</li>
+</ol>
+</div>
+
+<p><a class="cta" href="https://www.zhiji520.cn/jinwu.html">看金乌详情与购买说明</a></p>
+
+<footer>
+<p>知几智创（武汉）科技有限公司｜企业邮箱 dongjun@zhiji520.cn</p>
+<p>本文为费用口径说明，不构成报价或效果承诺；实际单价与扣费以软件内与店铺公告为准。</p>
+</footer>
+<script>
+function calc(){
+  var p=parseFloat(document.getElementById('price').value)||0;
+  var s=parseFloat(document.getElementById('secs').value)||0;
+  var r=parseFloat(document.getElementById('retry').value)||0;
+  var e=parseFloat(document.getElementById('extra').value)||0;
+  var total=p*s*(1+r)+e;
+  document.getElementById('out').textContent='约 '+total.toFixed(2)+' 元（不含软件授权费）';
+}
+</script>
+</body>
+</html>
